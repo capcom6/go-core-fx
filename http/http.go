@@ -11,7 +11,7 @@ func New(config Config, option Options, logger *zap.Logger) *fiber.App {
 	app := fiber.New(fiber.Config{
 		DisableStartupMessage:   true,
 		EnableIPValidation:      true,
-		EnableTrustedProxyCheck: true,
+		EnableTrustedProxyCheck: len(config.Proxies) > 0,
 		ErrorHandler:            option.errorHandler,
 		GETOnly:                 option.getOnly,
 		ProxyHeader:             config.ProxyHeader,
