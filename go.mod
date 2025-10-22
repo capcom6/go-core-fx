@@ -4,6 +4,7 @@ go 1.24.3
 
 require (
 	github.com/go-playground/validator/v10 v10.28.0
+	github.com/go-sql-driver/mysql v1.9.3
 	github.com/gofiber/contrib/fiberzap/v2 v2.1.6
 	github.com/gofiber/fiber/v2 v2.52.9
 	github.com/knadh/koanf/parsers/dotenv v1.1.0
@@ -18,6 +19,7 @@ require (
 )
 
 require (
+	filippo.io/edwards25519 v1.1.0 // indirect
 	github.com/andybalholm/brotli v1.1.0 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
